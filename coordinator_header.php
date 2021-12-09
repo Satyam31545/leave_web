@@ -1,3 +1,7 @@
+<?php  
+//coordinator header
+?>
+
 <html lang="en">
 <head>
 
@@ -96,6 +100,7 @@
   <a href="application_status.php">Leave status</a>
   <a href="password.php">Change Password</a>
   <a href="edit_forgot_password.php">Change Favorite Book</a>
+  <a href="edit_forgot_password.php">Change Favorite Book</a>
   <a href="logout.php" onclick="return confirm('are you sure want to logout ?')" >Logout</a>
 </div>
 <script>
@@ -106,6 +111,7 @@ function openNav() {
 function closeNav() {
   document.getElementById("mySidenav").style.width = "0";
 }
+
 </script>
 </body>
 </html>
