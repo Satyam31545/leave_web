@@ -178,7 +178,7 @@ if($leave_type == "HD"){
               
     if(mysqli_query($conn,$sql2)){
 
-        header("Location: {$hostname}/home_page.php");
+      echo "<p style='color:darkgreen;'>Leave Applyed.</p>";
     } 
 }
 

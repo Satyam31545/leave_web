@@ -29,7 +29,7 @@ if($_SESSION["position"] == '2'){
           background-color: rgb(183, 183, 228);
           border-radius: 15px;
           width: 450px;
-          height: 400px;
+          height: 300px;
           padding:20px;
          
       }
@@ -112,17 +112,18 @@ include "config.php";
  $book = $_SESSION["book"];
  $username = $_SESSION["username"];
  $new_book =$_POST['new_book'];
+ $_SESSION["book"] = $new_book;
 if($book == $_POST['old_book']){
 
  $sql = "UPDATE user_table SET secret_word = '{$new_book}' WHERE username = '{$username}'";
 
     if(mysqli_query($conn,$sql)){
-        header("Location: {$hostname}/home_page.php");
+      echo "<p style='color:darkgreen;'>Favorite Book Changed.</p>";
     }
 
 
    }else{
-    echo "<p style='color:red;font-size: 19px;text-align:center;margin: 10px 0;'>Wrong Username Or Password.</p>";
+    echo "<p>Wrong Book Name.</p>";
   }
         }
 

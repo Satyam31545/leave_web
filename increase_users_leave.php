@@ -36,7 +36,7 @@ if($_SESSION["position"] == '2'){
  
           background-color: rgb(183, 183, 228);
           width: 450px;
-          height: 670px;
+          height: 700px;
           border-radius: 15px;
           padding-left:20px;
       }
@@ -138,7 +138,7 @@ if(isset($_POST['edit'])){
 
     if(mysqli_query($conn,$sql)){
       
-      header("Location: {$hostname}/increase_users_leave.php");
+      echo "<p style='color:darkgreen;'>Leave Data Updated.</p>";
     }
 }
 ?>

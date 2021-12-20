@@ -39,6 +39,7 @@ if($_SESSION["position"] == '2'){
         color:white;
         background: green;
         border-radius: 25px 25px 0px 0px;
+        font-family: 'Playfair Display', serif;
       }
       .span{
         margin-left:20px ;

@@ -196,7 +196,7 @@ if($row['position'] == '1'){
 <?php
                 }
               }else{
-                echo "<p style='color:red;font-size: 19px;text-align:center;margin: 10px 0;'>Enter Right Id.</p>";
+                echo "<p>Enter Right Username.</p>";
               }
               }  ?>
 
@@ -212,7 +212,7 @@ $sql1 = "DELETE FROM user_table WHERE username =  '{$username}'";
 
 
 if(mysqli_query($conn,$sql1)){
-header("Location: {$hostname}/delete_user.php");}
+  echo "<p style='color:darkgreen;'>User Deleted.</p>";}
 }
 ?>
     <script>

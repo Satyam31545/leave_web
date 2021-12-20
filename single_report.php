@@ -267,7 +267,7 @@ $s_no = 1;
      </table>
      <br><br>
      <?php }else{
-                echo "<p style='color:red;font-size: 19px;text-align:center;margin: 10px 0;'>Enter Right Username.</p>";
+                echo "<p'>Enter Right Username.</p>";
               }} ?>
      
      <br>

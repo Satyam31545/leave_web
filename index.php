@@ -86,6 +86,9 @@
     a:hover{
      color:red;
    }
+   p{
+      color:red;text-align:center;margin: 10px 0;font-size: 26px;
+     }
     </style>
 </head>
 <body>
@@ -130,7 +133,7 @@
                   header("Location: {$hostname}/home_page.php");
                 }
           }else{
-            echo "<p style='color:red;font-size: 19px;text-align:center;margin: 10px 0;'>Wrong Username Or Password.</p>";
+            echo "<p>Wrong Username Or Password.</p>";
           }
 
         

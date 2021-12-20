@@ -44,6 +44,7 @@ if($_SESSION["position"] == '2'){
         color:white;
         background: green;
         border-radius: 25px 25px 0px 0px;
+        font-family: 'Playfair Display', serif;
       }
       #info>span{
         margin-left:20px;
@@ -154,7 +155,7 @@ if(($_SESSION["position"] == '2' && $row['admin_status'] == "no" &&  $row['rejec
 <?php  }
                       }
               }else{
-    echo "no data found";
+    echo "<p>no data found</p>";
 }
 
 

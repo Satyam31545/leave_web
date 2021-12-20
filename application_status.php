@@ -42,6 +42,7 @@ body {
         color:white;
         background: green;
         border-radius: 25px 25px 0px 0px;
+        font-family: 'Playfair Display', serif;
       }
 
       #info>span{
@@ -102,7 +103,9 @@ $sql = "SELECT * FROM status WHERE username = '{$username}'  ORDER BY status.id 
 ?>
 <hr><br>
 
-<?php   } }?>
+<?php   } }else{
+    echo "<p>no data found</p>";
+}?>
    </div></div>
    
 </body>

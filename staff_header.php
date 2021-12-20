@@ -7,6 +7,7 @@
 <head>
 
     <style>
+      @import url('https://fonts.googleapis.com/css2?family=Oxygen&family=Playfair+Display:wght@500&family=Readex+Pro:wght@500&family=Roboto:ital,wght@1,300&display=swap');
         #header{
           opacity: 0.5;
       background-color: white;
@@ -16,8 +17,9 @@
          position: -webkit-sticky;
          top: 0px;
          left: 0px;
-         height: 65px;
+         height: 70px;
     font-size: 55px;
+    font-family: 'Oxygen', sans-serif;
       }
       #span{
         font-size:45px;
@@ -25,8 +27,8 @@
       }
 
       body {
-  font-family: "Lato", sans-serif;
-  margin-top: 0px;
+        font-family: 'Roboto', sans-serif;
+          margin-top: 0px;
          padding-top: 0px;
          user-select: none;
 }
@@ -42,6 +44,7 @@
   overflow-x: hidden;
   transition: 0.5s;
   padding-top: 60px;
+  font-family: 'Readex Pro', sans-serif;
 }
 
 .sidenav a {
@@ -69,11 +72,12 @@
         padding-left:10%;
         min-width: 100%;
         font-size:52px;
+        font-family: 'Playfair Display', serif;
      }
 @media screen and (max-width: 500px) {
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
-  #header{ height: 50px;
+  #header{ height: 54px;
     font-size: 42px;}
     #span{
         font-size:35px;}
@@ -86,7 +90,13 @@
     font-size: 32px;}
     #span{
         font-size:30px;}
+        p{
+          font-size:20px;
+        }
 }
+p{
+      color:red;text-align:center;margin: 10px 0;font-size: 26px;
+     }
  
 
     </style>
@@ -100,7 +110,7 @@
   <a href="application_status.php">Leave status</a>
   <a href="password.php">Change Password</a>
   <a href="edit_forgot_password.php">Change Favorite Book</a>
-  <a href="edit_forgot_password.php">Change Favorite Book</a>
+
   <a href="logout.php" onclick="return confirm('are you sure want to logout ?')" >Logout</a>
 </div>
 <script>

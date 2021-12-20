@@ -235,7 +235,7 @@ echo "selected";
     <?php
                 }
               }else{
-                echo "<p style='color:red;font-size: 19px;text-align:center;margin: 10px 0;'>Enter Right Id.</p>";
+                echo "<p>Enter Right Username.</p>";
               }
               }  ?>
 <?php
@@ -252,7 +252,7 @@ $coordinator = mysqli_real_escape_string($conn,$_POST['coordinator']);
 $sql = "UPDATE user_table SET fullname = '{$fullname}', position = '{$position}', sex = '{$sex}', mobile_no = '{$mobile}', address = '{$address}', coordinator = '{$coordinator}' WHERE username = '{$username}'";
 
 if(mysqli_query($conn,$sql)){
-header("Location: {$hostname}/home_page.php");}
+  echo "<p style='color:darkgreen;'>User Data Updated.</p>";}
 }
 ?>
 

@@ -29,7 +29,7 @@ if($_SESSION["position"] == '2'){
           background-color: rgb(183, 183, 228);
           border-radius: 15px;
           width: 450px;
-          height: 400px;
+          height: 300px;
           padding:20px;
          
       }
@@ -122,12 +122,13 @@ if($password == $_POST['old_pass']){
  $sql = "UPDATE user_table SET password = '{$new_password}' WHERE username = '{$username}'";
 
     if(mysqli_query($conn,$sql)){
-        header("Location: {$hostname}/home_page.php");
+      $_SESSION["password"] = $new_password;
+      echo "<p style='color:darkgreen;'>Password Changed.</p>";
     }
 
 
    }else{
-    echo "<p style='color:red;font-size: 19px;text-align:center;margin: 10px 0;'>Wrong Password Entered.</p>";
+    echo "<p>Wrong Password Entered.</p>";
   }
         }
 

@@ -64,10 +64,11 @@
       border-color: red green red green;
 
     }
-
     input:hover {
-      width: 200px;
+      border-color: green;
+
     }
+  
 
     #submit:hover {
       width: 80px;

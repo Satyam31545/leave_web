@@ -30,7 +30,7 @@ if($_SESSION["position"] == '2'){
       #form{
           background-color: rgb(183, 183, 228);
           width: 450px;
-          height: 680px;
+          height: 750px;
           border-radius: 15px;
           padding-left:20px;
       }
@@ -97,6 +97,7 @@ if($_SESSION["position"] == '2'){
           height: 25px;
           font-size: 16px;
         }
+      
       }
       body {
       user-select: none;
@@ -153,7 +154,7 @@ if($_SESSION["position"] == '2'){
           $result = mysqli_query($conn, $sql) or die("");
   if(mysqli_num_rows($result) > 0){
     
-    echo "<p style='color:red;text-align:center;margin: 10px 0;'>UserName already Exists.</p>";
+    echo "<p>UserName already Exists.</p>";
   }else{
     $sql1 = "INSERT INTO leave_table (username)
               VALUES ('{$username}')";
@@ -162,10 +163,10 @@ if($_SESSION["position"] == '2'){
               mysqli_query($conn,$sql2);
     if(mysqli_query($conn,$sql1)){
      
-      header("Location: {$hostname}/create_user.php");
+          echo "<p style='color:darkgreen;'>User created.</p>";
      
     }else{
-      echo "<p style='color:red;text-align:center;margin: 10px 0;'>Can't Insert User.</p>";
+      echo "<p>Can't Insert User.</p>";
     }
   }
 }

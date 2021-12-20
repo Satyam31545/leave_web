@@ -36,7 +36,7 @@ if($_SESSION["position"] == '2'){
  
           background-color: rgb(183, 183, 228);
           width: 450px;
-          height: 750px;
+          height: 800px;
           border-radius: 15px;
           padding-left:20px;
       }
@@ -188,7 +188,7 @@ if($_SESSION["position"] == '2'){
     <?php
                 }
               }else{
-                echo "<p style='color:red;font-size: 19px;text-align:center;margin: 10px 0;'>Enter Right Username.</p>";
+                echo "<p>Enter Right Username.</p>";
               }
               }  ?>
 <?php
@@ -211,9 +211,8 @@ if(isset($_POST['edit'])){
 
     if(mysqli_query($conn,$sql)){
       
-      header("Location: {$hostname}/increase_leave.php");
-    }
-}
+      echo "<p style='color:darkgreen;'>Leave Data Updated.</p>";}  }
+
 ?>
  <script>
 
