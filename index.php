@@ -1,4 +1,4 @@
-<!-- This web site is develop and design by Satyam Singh-->
+<!-- This web site is develop and designed by Satyam Singh-->
 <!-- BCA 1st sem. RSMT -->
 <!-- Github Account :- https://github.com/Satyam31545 -->
 <!-- Date :- 17/11/2021 -->
